@@ -1,0 +1,194 @@
+<!---Estableciendo la versión HTML versión 5.0-->
+<!DOCTYPE html>
+<!--Etiqueta propiedad o atributo-->
+<html lang="es">
+
+<head>
+    <!--titulo de la página, icono de la pestaña estilo (css), js-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Resposivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style src="./js/css/miestilo.css"></style>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+    <!--Utilización del codigo CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icono.ico">
+    <title>Procampo</title>
+</head>
+
+<body>
+    <!-- AGREGAR FECHA CON JS -->
+    <!-- MENSAJE AL ABRIR LA PAGINA Bienvenido a nuestro portal de venta de productos del Campo -->
+    <div id="Menu">
+        <header>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.corabastos.com.co/en/noticias">Noticias de Corabastos
+                        Bogotá</a>
+                </li>
+                <li>
+                    <a target="_blank"
+                        href="https://www.cinep.org.co/Home2/component/k2/tag/campesinado.html?start=5">Editorial el
+                        Campesino si cuenta</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://ccconsumidores.org.co/">Confederación Colombiana de
+                        Consumidores</a>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <section>
+        <i>
+            <h1 style="color: blue;"> PROCAMPO </h1>
+        </i>
+        <div class="fecha1"></div>
+        <button>Regresar</button>
+        <!--Estilo externo-->
+
+        <link rel="stylesheet" href="css/miestilo.css">
+
+        <i>
+            <h2 class=".Titulo">Productos disponibles para compras en línea</h2>
+        </i>
+
+        <!--nested o anidación de equiquetas-->
+        <p>
+            <i>
+                <b>
+                    Productos disponibles para compras en línea
+                    Los siguientes productos se encuentran a muy buen precio de mercado debido a que en la actualidad
+                    se<br>
+                    encuentran en cosecha y por medio de esta página queremos incentivar su comercialización; si busca
+                    otra
+                    información
+                </b>
+            </i>
+        </p>
+        <!--propiedad de anclas-->
+        <a target="_blank" href="https://www.google.com/">haz clic para ir a Google</a>
+
+        <br>
+
+        <div class="contenidoDeBusqueda">
+            <div>
+                <h1>Encuentra las frutas y verduras que buscas</h1>
+                <input type="search" placeholder="Busca fruta o verdura" id="buscador">
+            </div>
+            <div class="resultados">
+                <div class="tarjeta">
+                    <div>
+                        <img src="img/banano.jpg" alt="Imagen de banano">
+                    </div>
+                    <div>
+                        Banano - $800
+                    </div>
+                </div>
+                <div class="tarjeta">
+                    <div>
+                        <img src="img/cebolla.jpg" alt="Imagen de cebolla">
+                    </div>
+                    <div>
+                        Cebolla - $500
+                    </div>
+                </div>
+                <div class="tarjeta">
+                    <div>
+                        <img src="img/papa.jpg" alt="Imagen de papa">
+                    </div>
+                    <div>
+                        Papa - $1000
+                    </div>
+                </div>
+                <div class="tarjeta">
+                    <div>
+                        <img src="img/fresas.jpg" alt="Imagen de fresas">
+                    </div>
+                    <div>
+                        Fresas - $600
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--agregar imagenes-->
+        <h2 class="Titulo"><b>Descripción de productos disponibles; precio por Libra</b></h2>
+        <div id="Procampo">
+            <ul>
+                <li>
+                    <a target="_blank" href="#papa">papa</a>
+                </li>
+                <li>
+                    <a target="_blank" href="#cebolla">cebolla</a>
+                </li>
+                <li>
+                    <a target="_blank" href="#banano">banano</a>
+                </li>
+                <li>
+                    <a target="_blank" href="#fresas">fresas</a>
+                </li>
+            </ul>
+            <div id="papa">
+                <p><img src="./img/papa.jpg" alt="Texto alterno!!">Precio $1.000=Libra</p>
+            </div>
+            <div id="cebolla">
+                <p><img src="./img/cebolla.jpg" alt="Texto alterno!!">Precio $500=Libra</p>
+            </div>
+            <div id="banano">
+                <p><img src="./img/banano.jpg" alt="Texto alterno!!">Precio $800=Libra</p>
+            </div>
+            <div id="fresas">
+                <p><img src="./img/fresas.jpg" alt="Texto alterno!!">Precio $600=Libra</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Elementos generados a partir de la clase-->
+                <main id="items" class="col-sm-8 row"></main>
+                <!-- Carrito -->
+                <aside class="col-sm-4">
+                    <h2>Carrito</h2>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="text-right">Total: <span id="total"></span>$pesos;</p>
+                    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                </aside>
+            </div>
+        </div>
+        <div id="map">
+            <div>
+                <h1>Encuentranos en nuestras tiendas</h1>
+            </div>
+            <br>
+            <div>
+                <!-- API gratuita de Google Maps -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1398.6335691489282!2d-73.81385528325443!3d5.306453038285045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e40385e9b224707%3A0x8e51122e424876d1!2sParque%20Principal%20Los%20Libertadores!5e1!3m2!1ses!2sco!4v1637852408816!5m2!1ses!2sco"
+                    width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>Autor: Trabajo de grupo</button>
+    </footer>
+
+    <!--Importamos la libreria de jQuery-->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!--Agregar el código java script-->
+    <script src="./js/funciones.js"></script>
+    <!--JS Bootstrap-->
+    <script src=".js/bootstrap.js"></script>
+    <script sr="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script>
+        $('#Procampo').tabs();
+    </script>
+    </script>
+    <script src="js/main.js"></script>
+    <script src="datos.js"></script>
+</body>
+
+</html>
